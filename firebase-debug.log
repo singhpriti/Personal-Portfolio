@@ -1,0 +1,81 @@
+[debug] [2022-02-01T16:48:25.274Z] ----------------------------------------------------------------------
+[debug] [2022-02-01T16:48:25.276Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Prity\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-02-01T16:48:25.277Z] CLI Version:   10.1.3
+[debug] [2022-02-01T16:48:25.277Z] Platform:      win32
+[debug] [2022-02-01T16:48:25.277Z] Node Version:  v16.13.1
+[debug] [2022-02-01T16:48:25.278Z] Time:          Tue Feb 01 2022 22:18:25 GMT+0530 (India Standard Time)
+[debug] [2022-02-01T16:48:25.278Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-01T16:48:25.351Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-01T16:48:25.352Z] > authorizing via signed-in user (singhpriti281@gmail.com)
+[debug] [2022-02-01T16:48:25.352Z] [iam] checking project personal-portfolio-71a16 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-01T16:48:25.354Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-portfolio-71a16:testIamPermissions [none]
+[debug] [2022-02-01T16:48:25.355Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-portfolio-71a16:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-01T16:48:28.507Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-portfolio-71a16:testIamPermissions 200
+[debug] [2022-02-01T16:48:28.508Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-portfolio-71a16:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-01T16:48:28.509Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-71a16 [none]
+[debug] [2022-02-01T16:48:30.415Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-71a16 200
+[debug] [2022-02-01T16:48:30.415Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-71a16 {"projectId":"personal-portfolio-71a16","projectNumber":"655987802517","displayName":"Personal-Portfolio","name":"projects/personal-portfolio-71a16","resources":{"hostingSite":"personal-portfolio-71a16"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'personal-portfolio-71a16'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-01T16:48:30.420Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-01T16:48:30.420Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-01T16:48:31.554Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 01 Feb 2022 16:48:28 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-01T16:48:31.570Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/personal-portfolio-71a16/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-01T16:48:33.625Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 01 Feb 2022 16:48:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-01T16:48:33.626Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-02-01T16:48:34.570Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 01 Feb 2022 16:48:30 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/personal-portfolio-71a16/versions",
+        "path": "/v1beta1/sites/personal-portfolio-71a16/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/personal-portfolio-71a16/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
