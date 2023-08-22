@@ -13,6 +13,20 @@ const Acomplishments = () => (
   <Section>
     <SectionTitle>Recent work</SectionTitle>
     <br/>
+    <SectionTitle>Freshworks</SectionTitle>
+    <H4>Graduate Trainee (IOS Developer)</H4>
+    <br/>
+    <P>08/2022 - 05/2023</P>
+    <br/>
+    <SectionText>
+    <ul>
+    <li> Worked with the IOS team of the FreshSales Department.</li>
+    <li>Debug and resolved issues, and wrote Unit Test cases.</li>
+    <li>Delivered public presentations to provide plans and updates on projects.</li>
+    <li>Studied user requirements to gain a strong understanding of project initiatives and deadlines.</li>
+    </ul>
+    </SectionText>
+    <br/>
     <SectionTitle>Tech Mates</SectionTitle>
     <H4>Web and Mobile App Developer Intern</H4>
     <br/>

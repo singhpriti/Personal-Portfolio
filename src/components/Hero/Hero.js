@@ -20,8 +20,8 @@ const Hero = (props) => (
           <br />
           Hii, I am Priti singh
           <br />
-          An Engineering Student with skills in Full Stack Development and
-          Problem Solving, I love to design, create and modify web app and
+          A Software Engineer with skills in IOS and Full Stack Development, 
+          I love to design, create and modify web app and
           mobile app.
         </SectionText>
         <Button
